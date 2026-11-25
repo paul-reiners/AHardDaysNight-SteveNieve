@@ -5,7 +5,7 @@
   tagline = ##f
 }
 \paper { #(set-paper-size "letter") }
-chords = \chordmode {
+scoreChords = \chordmode {
   s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 e1:m c1 g1 b1:7 e1:m e1:m g1 g1:7 c1 d1 g1 e1:m c1 d1 g1 g1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 e1:m c1 g1 b1:7 e1:m e1:m g1 g1:7 c1 d1 g1 e1:m c1 d1 g1 g1
 }
 keys = {
@@ -63,7 +63,7 @@ keys = {
   <b d' g'>1 | % 82
   \bar "|."
 }
-\score { << \new ChordNames \chords \new Staff \compressMMRests \keys >> \layout {} }
+\score { << \new ChordNames \scoreChords \new Staff \compressMMRests \keys >> \layout {} }
 \markup \small \wordwrap { Beat placement and releases are approximate. Solo is at sounding pitch.
 At bar 68, B4 sounds with C5; whether B4 was intended is uncertain.
 No further keyboard attack is apparent after bar 82. }
