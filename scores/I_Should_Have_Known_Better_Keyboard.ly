@@ -1,9 +1,10 @@
 \version "2.24.0"
 \header {
   title = "I Should Have Known Better"
-  subtitle = "Keyboard part transcribed from the Reiners piano–organ recording"
+  subtitle = "Keyboard part inspired by Steve Nieve"
   tagline = ##f
 }
+
 \paper { #(set-paper-size "letter") }
 scoreChords = \chordmode {
   s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 e1:m c1 g1 b1:7 e1:m e1:m g1 g1:7 c1 d1 g1 e1:m c1 d1 g1 g1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 e1:m c1 g1 b1:7 e1:m e1:m g1 g1:7 c1 d1 g1 e1:m c1 d1 g1 g1
@@ -64,7 +65,4 @@ keys = {
   \bar "|."
 }
 \score { << \new ChordNames \scoreChords \new Staff \compressMMRests \keys >> \layout {} }
-\markup \small \wordwrap { Beat placement and releases are approximate. Solo is at sounding pitch.
-At bar 68, B4 sounds with C5; whether B4 was intended is uncertain.
-No further keyboard attack is apparent after bar 82. }
 \score { \new Staff \with { midiInstrument = "acoustic grand" } \keys \midi {} }
