@@ -65,4 +65,3 @@ keys = {
   \bar "|."
 }
 \score { << \new ChordNames \scoreChords \new Staff \compressMMRests \keys >> \layout {} }
-\score { \new Staff \with { midiInstrument = "acoustic grand" } \keys \midi {} }
