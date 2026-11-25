@@ -7,8 +7,9 @@
 
 \paper {
   #(set-paper-size "letter")
-  system-count = #8
+  system-count = #7
   page-count = #1
+  markup-system-spacing.padding = #5
   ragged-last-bottom = ##f
 }
 

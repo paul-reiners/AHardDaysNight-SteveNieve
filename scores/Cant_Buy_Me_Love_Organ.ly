@@ -2,7 +2,7 @@
 
 \header {
   title = "Can't Buy Me Love"
-  subtitle = "Piano part inspired by Steve Nieve"
+  subtitle = "Keyboard parts inspired by Steve Nieve"
 }
 
 \score {
@@ -49,16 +49,15 @@
   }
 
   \new Staff \with {
-    instrumentName = "Vox-style Organ"
-    shortInstrumentName = "Organ"
+    instrumentName = "Vox Continental"
+    shortInstrumentName = "Vox"
   } {
     \clef treble
     \time 4/4
 
     % The instructor counts the eighth-note pickup as measure 1.
     % Show all bar numbers and keep the pickup's real 1/8 duration.
-    \set Score.barNumberVisibility = #all-bar-numbers-visible
-    \override Score.BarNumber.break-visibility = #end-of-line-invisible
+    \override Score.BarNumber.break-visibility = ##(#f #f #t)
     \set Score.currentBarNumber = #1
 
     % Instructor measure 1: eighth-note pickup
@@ -329,8 +328,8 @@
   % An original, monophonic keyboard hook for overdubbing.
   % Its short, angular eighth-note figure appears only in the B sections.
   \new Staff \with {
-    instrumentName = "Moog-style Synth"
-    shortInstrumentName = "Synth"
+    instrumentName = "Micromoog"
+    shortInstrumentName = "Moog"
   } {
     \clef treble
     \time 4/4
