@@ -195,4 +195,3 @@ part = {
   \bar "|."
 }
 \score { << \new ChordNames \harmonies \new Staff \part >> \layout {} }
-\score { \new Staff \with { midiInstrument = "acoustic grand" } \part \midi {} }
