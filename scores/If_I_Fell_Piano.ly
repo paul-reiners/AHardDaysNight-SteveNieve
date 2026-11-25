@@ -69,7 +69,6 @@ d1 |
 }
 part = {
   \clef treble \key d \major \time 4/4
-  \tempo "Quietly" 4 = 108
   % Bar 1
   \mark \markup \box "Intro" R1 |
   % Bar 2

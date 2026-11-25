@@ -11,7 +11,6 @@ scoreChords = \chordmode {
 }
 keys = {
   \key g \major \time 4/4 \clef treble
-  \tempo "Approx." 4 = 131
   \set Score.barNumberVisibility = #all-bar-numbers-visible
   \mark \markup \box "Opening"
   R1*22 | % 1–22
