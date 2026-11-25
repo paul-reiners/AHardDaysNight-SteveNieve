@@ -12,7 +12,6 @@ scoreChords = \chordmode {
 keys = {
   \key g \major \time 4/4 \clef treble
   \set Score.barNumberVisibility = #all-bar-numbers-visible
-  \mark \markup \box "Opening"
   R1*22 | % 1–22
   <e' g' b'>4-. r4 r2 | % 23
   <e' g' c''>4-. r4 r2 | % 24
@@ -31,8 +30,8 @@ keys = {
   <b d' g'>1 | % 37
   <b d' g'>1 | % 38
   R1*10 | % 39–48
-  \mark \markup \box "Solo"
   \clef bass
+  \mark \markup \box "gtr solo"
   r2 a,4 d4-. | % 49
   R1*2 | % 50–51
   b,4 g,4-. r2 | % 52
@@ -43,7 +42,6 @@ keys = {
   r2 a,4 d4-. | % 57
   b,2 a,2 | % 58
   R1*8 | % 59–66
-  \mark \markup \box "Return"
   \clef treble
   <e' g' b'>4-. r4 r2 | % 67
   <e' g' b' c''>4-.^\markup \italic \tiny "B4?" r4 r2 | % 68
