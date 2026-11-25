@@ -78,7 +78,7 @@ part = {
   % Bar 4
   R1 |
   % Bar 5
-  r2 fis'2~\p |
+  r2 fis'2 |
   % Bar 6
   fis'1 |
   % Bar 7
@@ -122,7 +122,7 @@ part = {
   % Bar 26
   r2 e'4 g'4 |
   % Bar 27
-  \mark \markup \box "B" <fis' c''>1\mp |
+  \mark \markup \box "B" <fis' c''>1 |
   % Bar 28
   r2 c''2 |
   % Bar 29
@@ -140,7 +140,7 @@ part = {
   % Bar 35
   r2 a'2 |
   % Bar 36
-  b'2\p g'2 |
+  b'2 g'2 |
   % Bar 37
   R1 |
   % Bar 38
@@ -152,7 +152,7 @@ part = {
   % Bar 41
   a'2 g'2 |
   % Bar 42
-  \mark \markup \box "B" <fis' c''>1\mp |
+  \mark \markup \box "B" <fis' c''>1 |
   % Bar 43
   r2 a'4 c''4 |
   % Bar 44
@@ -170,7 +170,7 @@ part = {
   % Bar 50
   R1 |
   % Bar 51
-  r2 g'2\pp |
+  r2 g'2 |
   % Bar 52
   e'2 r2 |
   % Bar 53
@@ -182,7 +182,7 @@ part = {
   % Bar 56
   R1 |
   % Bar 57
-  \mark \markup \box "Coda" <fis' a'>1\pp |
+  \mark \markup \box "Coda" <fis' a'>1 |
   % Bar 58
   <g' bes'>2 r2 |
   % Bar 59
