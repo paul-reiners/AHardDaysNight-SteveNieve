@@ -4,6 +4,14 @@
   subtitle = "Piano part inspired by Steve Nieve"
   tagline = ##f
 }
+
+\paper {
+  #(set-paper-size "letter")
+  system-count = #8
+  page-count = #1
+  ragged-last-bottom = ##f
+}
+
 harmonies = \chordmode {
 dis1:m |
 d1 |
