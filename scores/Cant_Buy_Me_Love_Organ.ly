@@ -387,8 +387,4 @@
   >>
 
   \layout { }
-  \midi {
-    % Retain the original practice-playback setting; GarageBand is at 172 BPM.
-    \tempo 4 = 120
-  }
 }
