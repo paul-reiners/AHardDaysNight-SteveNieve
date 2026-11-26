@@ -68,122 +68,122 @@
     \set Score.currentBarNumber = #2
 
     % Measure 2: E minor
-    <e' g' b'>8 r8 <e' g' b'>8 r8 r2 |
+    R1 |
 
     % Measure 3: A minor
-    r4 <e' a' c''>8 r8 <e' a' c''>8 r8 r4 |
+    R1 |
 
     % Measure 4: E minor
-    <e' g' b'>8 r8 r4 r2 |
+    R1 |
 
     % Measure 5: A minor
-    r4 <e' a' c''>8 r8 <e' a' c''>8 r8 r4 |
+    R1 |
 
     % Measure 6: D minor
-    r4 <f' a' d''>8 r8 <f' a' d''>8 r8 r4 |
+    R1 |
 
     % Measure 7: G major — end of introduction
     \set Score.currentBarNumber = #7
-    <g' b' d''>8 r8 <g' b' d''>2 r4 |
+    R1 |
     \bar "||"
 
     % Measure 8: Section A — C7
     % Explicit anchor: the boxed A must coincide with instructor bar 8.
     \set Score.currentBarNumber = #8
     \mark \markup { \box "A" }
-    <g' bes' c'' e''>2 r2 |
+    R1 |
 
-    % Measure 9: C7
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
+    % Measure 21: C7 (same as m. 9)
+    R1 |
 
-    % Measure 10: C7 — repeat of measure 8
-    <g' bes' c'' e''>2 r2 |
+    % Measure 22: C7 (same as m. 10)
+    R1 |
 
-    % Measure 11: C7 — melodic variation
-    <g' bes' c'' e''>8 r8 <g' bes' c'' f''>2 r4 |
+    % Measure 23: C7 (same as m. 11)
+    r2 <g' bes' c'' e''>4 <g' bes' c'' e''>8 r8 |
 
-    % Measure 12: F7
-    <a' c'' es'' f''>8 r8 <a' c'' es'' f''>8 r8 r2 |
+    % Measure 24: F7 (same as m. 12)
+    R1 |
 
-    % Measure 13: F7 — rhythmic variation
-    r4 <a' c'' es'' f''>4 <a' c'' es'' f''>8 r8 r4 |
+    % Measure 25: F7 (same as m. 13)
+    R1 |
 
-    % Measure 14: C7
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
+    % Measure 26: C7 (same as m. 14)
+    R1 |
 
-    % Measure 15: C7 (repeat measure 14)
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
+    % Measure 27: C7
+    r2 r4 <g' bes' c'' e''>8 r8 |
 
-    % Measure 16: G7
-    <g' b' d'' f''>2 r2 |
+    % Measure 28: G7 (same as m. 16)
+    R1 |
 
-    % Measure 17: F7 — one short eighth-note stab on beat 2
-    r4 <a' c'' es'' f''>8 r8 r2 |
+    % Measure 29: F7 (same as m. 17)
+    <a' c'' es'' f''>8 r8 r2. |
 
-    % Measure 18: F7 — corrected to match the instructor's bass/guitar charts
-    <a' c'' es'' f''>2 r2 |
+    % Measure 30: F7 (same as m. 18)
+    R1 |
 
-    % Measure 19: C7 — one simple eighth-note stab on beat 2
-    r4 <g' bes' c'' e''>8 r8 r2 |
+    % Measure 31: C7 (same as m. 19)
+    R1 |
 
     % Measure 20: Section A repeats, using the same twelve-bar material.
     \set Score.currentBarNumber = #20
     \mark \markup { \box "A" }
-    <g' bes' c'' e''>2 r2 |
+    R1 |
 
     % Measure 21: C7 (same as m. 9)
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
+    R1 |
 
     % Measure 22: C7 (same as m. 10)
-    <g' bes' c'' e''>2 r2 |
+    R1 |
 
     % Measure 23: C7 (same as m. 11)
-    <g' bes' c'' e''>8 r8 <g' bes' c'' f''>2 r4 |
+    r2 <g' bes' c'' e''>4 <g' bes' c'' e''>8 r8 |
 
     % Measure 24: F7 (same as m. 12)
-    <a' c'' es'' f''>8 r8 <a' c'' es'' f''>8 r8 r2 |
+    R1 |
 
     % Measure 25: F7 (same as m. 13)
-    r4 <a' c'' es'' f''>4 <a' c'' es'' f''>8 r8 r4 |
+    R1 |
 
     % Measure 26: C7 (same as m. 14)
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
+    R1 |
 
-    % Measure 27: C7 (same as m. 15)
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
+    % Measure 27: C7
+    r2 r4 <g' bes' c'' e''>8 r8 |
 
     % Measure 28: G7 (same as m. 16)
-    <g' b' d'' f''>2 r2 |
+    R1 |
 
     % Measure 29: F7 (same as m. 17)
-    r4 <a' c'' es'' f''>8 r8 r2 |
+    <a' c'' es'' f''>8 r8 r2. |
 
     % Measure 30: F7 (same as m. 18)
-    <a' c'' es'' f''>2 r2 |
+    R1 |
 
     % Measure 31: C7 (same as m. 19)
-    r4 <g' bes' c'' e''>8 r8 r2 |
+    R1 |
 
     % Section B — measures 32–39 (eight bars on the instructor's chart).
     \set Score.currentBarNumber = #32
     \mark \markup { \box "B" }
 
     % 32 Em
-    <e' g' b'>2 r2 |
+    R1 |
     % 33 Am
-    r4 <e' a' c''>4 r2 |
+    R1 |
     % 34 C7
-    <g' bes' c'' e''>2 r2 |
+    R1 |
     % 35 C7
-    r4 <g' bes' c'' e''>4 r2 |
+    R1 |
     % 36 Em
-    r4 <e' g' b'>4 r2 |
+    R1 |
     % 37 Am
-    <e' a' c''>2 r2 |
+    R1 |
     % 38 Dm
-    r4 <f' a' d''>4 r2 |
+    R1 |
     % 39 G
-    <g' b' d''>2 r2 |
+    R1 |
 
     \bar "||"
 
@@ -192,18 +192,40 @@
     \mark \markup { \box "A" }
 
     % Repeat measures 8–19
-    <g' bes' c'' e''>2 r2 |
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
-    <g' bes' c'' e''>2 r2 |
-    <g' bes' c'' e''>8 r8 <g' bes' c'' f''>2 r4 |
-    <a' c'' es'' f''>8 r8 <a' c'' es'' f''>8 r8 r2 |
-    r4 <a' c'' es'' f''>4 <a' c'' es'' f''>8 r8 r4 |
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
-    <g' b' d'' f''>2 r2 |
-    r4 <a' c'' es'' f''>8 r8 r2 |
-    <a' c'' es'' f''>2 r2 |
-    r4 <g' bes' c'' e''>8 r8 r2 |
+    R1 |
+
+    % Measure 21: C7 (same as m. 9)
+    R1 |
+
+    % Measure 22: C7 (same as m. 10)
+    R1 |
+
+    % Measure 23: C7 (same as m. 11)
+    r2 <g' bes' c'' e''>4 <g' bes' c'' e''>8 r8 |
+
+    % Measure 24: F7 (same as m. 12)
+    R1 |
+
+    % Measure 25: F7 (same as m. 13)
+    R1 |
+
+    % Measure 26: C7 (same as m. 14)
+    R1 |
+
+    % Measure 27: C7
+    r2 r4 <g' bes' c'' e''>8 r8 |
+
+    % Measure 28: G7 (same as m. 16)
+    R1 |
+
+    % Measure 29: F7 (same as m. 17)
+    <a' c'' es'' f''>8 r8 r2. |
+
+    % Measure 30: F7 (same as m. 18)
+    R1 |
+
+    % Measure 31: C7 (same as m. 19)
+    R1 |
 
     \bar "||"
 
@@ -218,40 +240,40 @@
     \mark \markup { "gtr solo" }
 
     % 53 — C7
-    r4 <g' bes' c'' e''>8 r8 r2 |
+    R1 |
 
     % 54 — C7
-    r4 <g' bes' c'' e''>4 r2 |
+    R1 |
 
     % 55 — C7
-    r4 <bes' e'' g''>4 r2 |
+    R1 |
 
     % 56 — C7
-    r2 r4 <bes' e'' g''>4 |
+    R1 |
 
     % 57 — F7
-    r4 <a' c'' es'' f''>4 r2 |
+    R1 |
 
     % 58 — F7
-    r2 r4 <a' c'' es''>4 |
+    R1 |
 
     % 59 — C7
-    r4 <g' bes' c'' e''>4 r2 |
+    R1 |
 
     % 60 — C7
-    r1 |
+    R1 |
 
     % 61 — G7
-    r4 <g' b' d'' f''>4 r2 |
+    R1 |
 
     % 62 — F7
-    r4 <a' c'' es'' f''>8 r8 r2 |
+    R1 |
 
     % 63 — F7
-    r2 r4 <a' c'' es''>4 |
+    R1 |
 
     % 64 — C7
-    r4 <g' bes' c'' e''>4 r4 <bes' e'' g''>4 |
+    R1 |
 
     \bar "||"
 
@@ -259,14 +281,14 @@
     % Repeat the eight-bar arrangement from measures 32–39.
     \set Score.currentBarNumber = #65
     \mark \markup { \box "B" }
-    <e' g' b'>2 r2 |
-    r4 <e' a' c''>4 r2 |
-    <g' bes' c'' e''>2 r2 |
-    r4 <g' bes' c'' e''>4 r2 |
-    r4 <e' g' b'>4 r2 |
-    <e' a' c''>2 r2 |
-    r4 <f' a' d''>4 r2 |
-    <g' b' d''>2 r2 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
 
     \bar "||"
 
@@ -274,21 +296,40 @@
     % Repeat measures 8–18; use the new C7 transition in measure 84.
     \set Score.currentBarNumber = #73
     \mark \markup { \box "A" }
-    <g' bes' c'' e''>2 r2 |
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
-    <g' bes' c'' e''>2 r2 |
-    <g' bes' c'' e''>8 r8 <g' bes' c'' f''>2 r4 |
-    <a' c'' es'' f''>8 r8 <a' c'' es'' f''>8 r8 r2 |
-    r4 <a' c'' es'' f''>4 <a' c'' es'' f''>8 r8 r4 |
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
-    <g' b' d'' f''>2 r2 |
-    r4 <a' c'' es'' f''>8 r8 r2 |
-    <a' c'' es'' f''>2 r2 |
+    R1 |
 
-    % Measure 84 — C7: backbeat chord, then B-flat on beat 4 leads
-    % chromatically into the B-natural of the following E minor chord.
-    r4 <g' bes' c'' e''>4 r4 bes'4 |
+    % Measure 21: C7 (same as m. 9)
+    R1 |
+
+    % Measure 22: C7 (same as m. 10)
+    R1 |
+
+    % Measure 23: C7 (same as m. 11)
+    r2 <g' bes' c'' e''>4 <g' bes' c'' e''>8 r8 |
+
+    % Measure 24: F7 (same as m. 12)
+    R1 |
+
+    % Measure 25: F7 (same as m. 13)
+    R1 |
+
+    % Measure 26: C7 (same as m. 14)
+    R1 |
+
+    % Measure 27: C7
+    r2 r4 <g' bes' c'' e''>8 r8 |
+
+    % Measure 28: G7 (same as m. 16)
+    R1 |
+
+    % Measure 29: F7 (same as m. 17)
+    <a' c'' es'' f''>8 r8 r2. |
+
+    % Measure 30: F7 (same as m. 18)
+    R1 |
+
+    % Measure 31: C7 (same as m. 19)
+    R1 |
 
     \bar "||"
 
@@ -298,25 +339,25 @@
 
     % First playable draft: echo B, then add backbeat accents and a held ending.
     % 85 — Em: begin with a sustained chord, recalling the first B section.
-    <e' g' b'>2 r2 |
+    R1 |
 
     % 86 — Am: chord on beat 2.
-    r4 <e' a' c''>4 r2 |
+    R1 |
 
     % 87 — Em: beats 2 and 4; the second chord sits higher.
-    r4 <e' g' b'>4 r4 <g' b' e''>4 |
+    R1 |
 
     % 88 — Am: answer with the same rhythm and a higher inversion.
-    r4 <e' a' c''>4 r4 <a' c'' e''>4 |
+    R1 |
 
     % 89 — Dm: leave space for the band.
-    r4 <f' a' d''>4 r2 |
+    R1 |
 
     % 90 — G7: two backbeat punctuations lead into C7.
-    r4 <g' b' d'' f''>4 r4 <g' b' d'' f''>4 |
+    R1 |
 
     % 91 — C7: emphatic backbeats.
-    r4 <g' bes' c'' e''>4 r4 <g' bes' c'' e''>4 |
+    R1 |
 
     % 92 — C7: final sustained chord (the bass chart's last whole-note bar).
     <g' bes' c'' e''>1 |
