@@ -174,7 +174,7 @@
 
     % Guitar solo — measures 53–64
     \set Score.currentBarNumber = #53
-    \mark \markup { "gtr solo" }
+    \mark \markup { \box "gtr solo" }
 
     % 53 — C7
     R1 |
