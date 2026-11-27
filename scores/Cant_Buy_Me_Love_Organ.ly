@@ -6,19 +6,25 @@
 }
 
 \markup {
-  \wordwrap-string "
-    The Vox Continental part is inspired by Steve Nieve's
-    rhythmic organ playing with Elvis Costello and the
-    Attractions. The part emphasizes short chord attacks and
-    deliberate silences.
+  \column {
+    \vspace #1
 
-    The Micromoog part introduces a repeating melodic motif
-    in the B sections. Its purpose is to provide a contrasting
-    keyboard texture without competing with the vocals.  Nieve did this particularly well in the song 'The Beat'.
+      \wordwrap-string "
+        The Vox Continental part is inspired by Steve Nieve's
+        rhythmic organ playing with Elvis Costello and the
+        Attractions. The part emphasizes short chord attacks and
+        deliberate silences that should interlock with the vocals.
 
-    The unusual high and low notes during the guitar solo
-    are intended as a dramatic effect.  Nieve often did more complex versions of this, which Elvis Costello called 'the siren'
-  "
+        The Micromoog part introduces a repeating melodic motif
+        in the B sections. Its purpose is to provide a contrasting
+        keyboard texture without competing with the vocals.  Nieve did this particularly well in the song 'The Beat'.
+
+        The unusual high and low notes during the guitar solo
+        are intended as a dramatic effect.  Nieve often did more complex versions of this, which Elvis Costello called 'the siren'
+      "
+
+      \vspace #1
+    }
 }
 
 \score {
