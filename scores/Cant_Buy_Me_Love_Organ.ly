@@ -392,5 +392,8 @@
   >>
   >>
 
-  \layout { }
+  \layout {
+    indent = 45\mm
+    short-indent = 15\mm
+  }
 }
