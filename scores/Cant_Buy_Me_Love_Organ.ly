@@ -13,14 +13,14 @@
         The Vox Continental part is inspired by Steve Nieve's
         rhythmic organ playing with Elvis Costello and the
         Attractions. The part emphasizes short chord attacks and
-        deliberate silences that should interlock with the vocals.
+        deliberate silences that interlock with the vocals.
 
         The Micromoog part introduces a repeating melodic motif
         in the B sections. Its purpose is to provide a contrasting
-        keyboard texture without competing with the vocals.  Nieve did this particularly well in the song 'The Beat'.
+        keyboard texture without competing with the vocals.  Nieve used this approach particularly effectively on 'The Beat'.
 
         The unusual high and low notes during the guitar solo
-        are intended as a dramatic effect.  Nieve often did more complex versions of this, which Elvis Costello called 'the siren'
+        are intended as a dramatic effect.  Nieve often used more elaborate variations of this effect, which Elvis Costello called 'the siren'.
       "
 
       \vspace #1
