@@ -307,12 +307,15 @@
 
   % An original, monophonic keyboard hook for overdubbing.
   % Its short, angular eighth-note figure appears only in the B sections.
-  \new Staff \with {
+  % Micromoog is notated on a linked treble/bass pair of staves.
+  % The bass staff is a blank template for future low-register notes.
+  \new PianoStaff \with {
     instrumentName = "Micromoog"
     shortInstrumentName = "Moog"
-  } {
-    \clef treble
-    \time 4/4
+  } <<
+    \new Staff = "MicromoogTreble" {
+      \clef treble
+      \time 4/4
 
     % The instructor counts the eighth-note pickup as measure 1.
     \partial 8 r8 |
@@ -363,7 +366,20 @@
 
     % Measures 73–92: no synth in the final A or chorus outro.
     R1*20
-  }
+    }
+
+    \new Staff = "MicromoogBass" {
+      \clef bass
+      \time 4/4
+      \partial 8 r8 |
+      R1*6
+      \repeat volta 2 { R1*12 }
+      R1*8
+      R1*25
+      R1*8
+      R1*20
+    }
+  >>
   >>
 
   \layout { }
