@@ -166,11 +166,9 @@
     % Measure 31: C7 (same as m. 19)
     R1 |
 
-    \bar "||"
-
     % Measure 52: closing C7 tag before the guitar solo.
     \set Score.currentBarNumber = #52
-    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
+    R1 |
 
     \bar "||"
 
