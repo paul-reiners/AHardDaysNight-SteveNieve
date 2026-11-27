@@ -15,14 +15,12 @@
       % Chorus intro — measures 2–7
       e1:m | a1:m | e1:m | a1:m |
       d1:m | g1 |
-      % A — measures 8–19
-      c1:7 | c1:7 | c1:7 | c1:7 |
-      f1:7 | f1:7 | c1:7 | c1:7 |
-      g1:7 | f1:7 | f1:7 | c1:7 |
-      % A repeat — measures 20–31
-      c1:7 | c1:7 | c1:7 | c1:7 |
-      f1:7 | f1:7 | c1:7 | c1:7 |
-      g1:7 | f1:7 | f1:7 | c1:7 |
+      % A section, played twice (8–19 and 20–31).
+      \repeat volta 2 {
+        c1:7 | c1:7 | c1:7 | c1:7 |
+        f1:7 | f1:7 | c1:7 | c1:7 |
+        g1:7 | f1:7 | f1:7 | c1:7 |
+      }
       % B — measures 32–39
       e1:m | a1:m | c1:7 | c1:7 |
       e1:m | a1:m | d1:m | g1 |
@@ -85,84 +83,25 @@
     % Measure 7: G major — end of introduction
     \set Score.currentBarNumber = #7
     R1 |
-    \bar "||"
 
-    % Measure 8: Section A — C7
-    % Explicit anchor: the boxed A must coincide with instructor bar 8.
+    % First A section (instructor bars 8–19), played twice (8–19, 20–31).
+    % The twelve bars on both passes were verified to be identical.
     \set Score.currentBarNumber = #8
     \mark \markup { \box "A" }
-    R1 |
-
-    % Measure 21: C7 (same as m. 9)
-    R1 |
-
-    % Measure 22: C7 (same as m. 10)
-    R1 |
-
-    % Measure 23: C7 (same as m. 11)
-    r2 <g' bes' c'' e''>4 <g' bes' c'' e''>8 r8 |
-
-    % Measure 24: F7 (same as m. 12)
-    R1 |
-
-    % Measure 25: F7 (same as m. 13)
-    R1 |
-
-    % Measure 26: C7 (same as m. 14)
-    R1 |
-
-    % Measure 27: C7
-    r2 r4 <g' bes' c'' e''>8 r8 |
-
-    % Measure 28: G7 (same as m. 16)
-    R1 |
-
-    % Measure 29: F7 (same as m. 17)
-    <a' c'' es'' f''>8 r8 r2. |
-
-    % Measure 30: F7 (same as m. 18)
-    R1 |
-
-    % Measure 31: C7 (same as m. 19)
-    R1 |
-
-    % Measure 20: Section A repeats, using the same twelve-bar material.
-    \set Score.currentBarNumber = #20
-    \mark \markup { \box "A" }
-    R1 |
-
-    % Measure 21: C7 (same as m. 9)
-    R1 |
-
-    % Measure 22: C7 (same as m. 10)
-    R1 |
-
-    % Measure 23: C7 (same as m. 11)
-    r2 <g' bes' c'' e''>4 <g' bes' c'' e''>8 r8 |
-
-    % Measure 24: F7 (same as m. 12)
-    R1 |
-
-    % Measure 25: F7 (same as m. 13)
-    R1 |
-
-    % Measure 26: C7 (same as m. 14)
-    R1 |
-
-    % Measure 27: C7
-    r2 r4 <g' bes' c'' e''>8 r8 |
-
-    % Measure 28: G7 (same as m. 16)
-    R1 |
-
-    % Measure 29: F7 (same as m. 17)
-    <a' c'' es'' f''>8 r8 r2. |
-
-    % Measure 30: F7 (same as m. 18)
-    R1 |
-
-    % Measure 31: C7 (same as m. 19)
-    R1 |
+    \repeat volta 2 {
+        R1 |
+        R1 |
+        R1 |
+        r2 <g' bes' c'' e''>4 <g' bes' c'' e''>8 r8 |
+        R1 |
+        R1 |
+        R1 |
+        r2 r4 <g' bes' c'' e''>8 r8 |
+        R1 |
+        <a' c'' es'' f''>8 r8 r2. |
+        R1 |
+        R1 |
+    }
 
     % Section B — measures 32–39 (eight bars on the instructor's chart).
     \set Score.currentBarNumber = #32
@@ -378,8 +317,9 @@
     % The instructor counts the eighth-note pickup as measure 1.
     \partial 8 r8 |
 
-    % Measures 2–31: no synth during the intro or A sections.
-    R1*30
+    % Intro bars 2–7 and two passes of A: no synth.
+    R1*6
+    \repeat volta 2 { R1*12 }
 
     % B section, measures 32–39. Short calls on beats 2 and 4,
     % with answering eighth notes; let the organ carry the chords.
