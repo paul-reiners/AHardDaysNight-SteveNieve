@@ -166,9 +166,11 @@
     % Measure 31: C7 (same as m. 19)
     R1 |
 
+    \bar "||"
+
     % Measure 52: closing C7 tag before the guitar solo.
     \set Score.currentBarNumber = #52
-    R1 |
+    <g' bes' c'' e''>8 r8 <g' bes' c'' e''>2 r4 |
 
     \bar "||"
 
@@ -341,8 +343,14 @@
     % 39 G
     r4 b'8 d''8 r4 c''8 b'8 |
 
-    % Measures 40–64: silent through A and the guitar solo.
-    R1*25
+    \set Staff.ottavationMarkups = #ottavation-ordinals
+    % Measures 40–53: silent. Measure 54: C8 whole note from beat 1.
+    R1*14
+    \ottava #2
+    c'''''1 |  % 54: C8 (sounding), notated two octaves lower with 15ma
+    \ottava #0
+    % Measures 55–64: silent.
+    R1*10
 
     % B section returns, measures 65–72: reprise the same hook.
     % 65 Em
@@ -373,7 +381,13 @@
       R1*6
       \repeat volta 2 { R1*12 }
       R1*8
-      R1*25
+      R1*14
+      \ottava #-2
+      \set Staff.ottavation = "15mb"
+      c,,4
+      \ottava #0
+      r2. |
+      R1*10
       R1*8
       R1*20
     }
